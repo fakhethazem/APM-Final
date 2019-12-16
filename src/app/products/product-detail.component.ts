@@ -12,7 +12,10 @@ export class ProductDetailComponent implements OnInit {
   pageTitle = 'Product Detail';
   errorMessage = '';
   product: IProduct | undefined;
-
+  liste: any[]=[{
+    User:"hazem",
+    message:"hi , am hazem"
+  }];
   constructor(private route: ActivatedRoute,
               private router: Router,
               private productService: ProductService) {
